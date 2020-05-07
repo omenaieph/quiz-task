@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(images/culll.jpg);
+  background-size: cover;
+}
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #00263b;
+  margin: 30px 0px -15px;
+}
+
+.line {
+  height: 10px;
+  width: 100px;
+  background-color: #00263b;
+  margin: 20px auto;
+}
+
+.quiz_wrapper {
+  height: 400px;
+  max-width: 650px;
+  background-color: #00263b;
+  margin: 50px auto;
+  border-radius: 8px;
+  padding: 30px;
+  position: relative;
+}
+
+.quiz_wrapper .question {
+  text-align: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #00263b;
+  font-size: 20px;
+  float: left;
+  width: 100%;
+}
+.quiz_wrapper .options {
+  float: left;
+  width: 100%;
+}
+
+.quiz_wrapper .options ul {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.quiz_wrapper .options ul li {
+  display: inline-block;
+  background-color: #222831;
+  width: 47%;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 25px;
+  font-size: 15px;
+  color: #ffffff;
+  box-shadow: 0px 3px 0px white;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+}
+
+.quiz_wrapper .options ul li:active {
+  box-shadow: 0px 3px 0px transparent;
+}
+.quiz_wrapper .options ul li.correct {
+  background-color: #0fd40f;
+}
+
+.quiz_wrapper .options ul li.wrong {
+  background-color: #e91e1e;
+}
+
+.quiz_wrapper .score {
+  float: left;
+  width: 100%;
+  padding: 25px 0px;
+}
+
+.quiz_wrapper .score .next {
+  width: 40%;
+  float: left;
+}
+.quiz_wrapper .score .next button {
+  padding: 15px 80px;
+  color: #00263b;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+
+  outline: none;
+}
+
+.quiz_wrapper .score .score-card {
+  width: 60%;
+  float: left;
+}
+.quiz_wrapper .score .score-card {
+  font-size: 20px;
+  color: white;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.quiz_wrapper .score .score-card span {
+  background-color: white;
+  padding: 5px 20px;
+  border-radius: 8px;
+  color: #00263b;
+}
+
+.score-card {
+  text-align: end;
+}
+
+@media (max-width: 550px) {
+  .score-card {
+    position: static;
+    text-align: end;
+  }
+}
